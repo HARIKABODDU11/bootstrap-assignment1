@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img src="img/images9.png" alt="logo" </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <section class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+
+              <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Travel Gear</a>
+              </li>
+              <li class="nav-item dropdown">
+
+                  <section class="nav- dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Locations
+                  </section>
+                  <section class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Cities</a>
+                      <a class="dropdown-item" href="#">Towns</a>
+
+                  </section>
+              </li>
+              <li>
+                  <form class="form-inline">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-success my-2 my-sm-0" type="submit">Go</button>
+                  </form>
+              </li>
+          </ul>
+      </section>
+</nav>
+<!--End of navbar-->
+<!---end of navigation-->
+  
+ <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner" id="hello1">
+        <div class="carousel-item active">
+          <img src="img/index17.jpeg" alt="Los Angeles">
+          <div class="carousel-caption">
+            <h3>Maldives</h3>
+            <p>We had such a great time in Maldives!</p>
+          </div>   
+        </div>
+        <div class="carousel-item">
+          <img src="img/index19.jpeg" alt="Chicago">
+          <div class="carousel-caption">
+            <h3>San Francisco</h3>
+            <p>Thank you,San Francisco !</p>
+          </div>   
+        </div>
+        <div class="carousel-item">
+          <img src="img/index18.jpeg" alt="New York">
+          <div class="carousel-caption">
+            <h3>Prague</h3>
+            <p>We love the Big Apple!</p>
+          </div>   
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <div class="container-fluid">
+        <div class="jumbotron">
+          <h1>Travel Destinations</h1>      
+          <p>India is the home to numerous attractions, amenities, activities and beauties. It is not hard to believe that a land as diverse as India has a long list of travel destinations within its border. Starting from the valleys of Kashmir to the tri-colored sea of Kanyakumari, you will find numerous tourist attractions, which would suit your taste. If you were visiting India in winter, Rajasthan, Delhi, Maharashtra, Tamil Nadu, Kerala, Chandigarh, Karnataka, Goa and other places would be in the top choice. If you choose to visit India in the monsoon, Uttarakhand, Munnar, Kodaikanal,
+             Lahaul, Mussorie, Cherrapunji and Coorg are some of the places to choose. </p>
+        </div>    
+    </div>
+
+    <div class="card-deck">
+        <div class="card">
+          <img src="img/index20.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><b>Hong Kong</b></h5>
+            <p class="card-text">Hong Kong is a destination that puts travelers' senses into overdrive. The glittering skyline, the dynamic food scene, the historical sites and the family-friendly attractions are just a few reasons visitors can't get enough of this bustling metropolis. Start your trip with a tour of the waterfront on the Star Ferry, and pencil in visits to Hong Kong Disneyland or Ocean Park amusement park
+               if you're traveling with kids. </p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/index21.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><b>Sydney</b></h5>
+            <p class="card-text">The largest city in Australia offers a wealth of activities and attractions for travelers to enjoy. You can climb the Sydney Harbour Bridge for spectacular views (and a heart-pumping adventure), stroll through Darling Harbour and peruse the 74-acre Royal Botanic Garden. When it's time to wind down, head to Coogee Beach to sunbathe or snorkel, 
+              or to Bondi Beach to watch the surfers shred waves.</p>
+            
+            <!-- Button to Open the Modal -->
+             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+             Sydney
+            </button>
+  
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            Modal body..
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+   </div>
+</div>
+ <div class="card">
+          <img src="img/index22.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><b>Maui, Hawaii</b></h5>
+            <p class="card-text">With captivating beaches, several scenic golf courses and even a volcano, Maui is almost an otherworldly vacation destination. Beach bums will have plenty of sandy shoreline to choose from: Waianapanapa features jet-black sand and is framed by an emerald green jungle, Kaanapali Beach is great for snorkeling and Wailea Beach 
+              is popular with those just looking to relax and take in the views.</p>
+          </div>
+        </div>
+ </div>
+ <!---tabbed pane-->
+
+ <div class="container-fluid">
+  <h2>Dynamic Tabs</h2>
+  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">The Mexico Tipping Guide </a></li>
+    <li><a data-toggle="tab" href="#menu2">10 Magical Canal Cities That Aren’t Venice </a></li>
+    <li><a data-toggle="tab" href="#menu3">The Most Overcrowded Tourist Destinations </a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
+
+<!--end-->
+      <!---section start-->
+      <section class="row" id="row0">
+        <section class="col-lg-4">
+            <!--Google map-->
+            <section id="map-container-google-1" class="z-depth-1-half map-container">
+                <iframe src="https://maps.google.com/maps?q=banglore&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </section>
+
+            <!--End of Google Maps-->
+        </section>
+        <section class="col-lg-8">
+          <!--Jumbotron-->
+          <section class="jumbotron">
+              <h1>
+                Private & Tailormade Tours Discover Asia
+                </h1>
+              <h3 class="text-success"> 
+                Enjoy the exclusive asia tour packages from India
+                
+                Have a look at our favourite Asia tour options below. Explore remarkable cultures with an intriguing tour of Asia, travelling from India to Nepal, Bhutan to Tibet including Srilanka.
+                </h3>
+          </section>
+          <!--End of Jumbotron-->
+      </section>
+  </section>
+
+
+
+
+             <section class="container-fluid" id="foot">
+              <!--Footer-->
+              <footer class="footer">
+                  <p>&copy; Travel Destination | Privacy Policy | Terms of Service
+                      <i style='font-size:24px' class='fab'>&#xf16d;</i>
+                      <i style='font-size:24px' class='fab'>&#xf09a;</i>
+                      <i style='font-size:24px' class='fab'>&#xf099;</i>
+                  </p>
+              </footer>
+              <!--End of Footer-->
+          </section>
+
+
+
+</body>
+</html>
+
